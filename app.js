@@ -1,13 +1,8 @@
 (function() {
-	var app = angular.module('store', []);
+	var app = angular.module('store');
 	
-	app.controller('StoreController', ['$scope', function($scope) {
-		$scope.product = gem;
+	app.controller('StoreController', ['$scope', 'Product', function($scope, Product) {
+		$scope.product = Product.get();
 	}]);
-	
-	var gem = {
-		name: 'Cool product',
-		price: 2.95,
-		description: 'bla bla'
-	}
+
 })();
