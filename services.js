@@ -1,5 +1,5 @@
 (function() {
-	var app = angular.module('store', []);
+	var app = angular.module('services', []);
 	
 	app.service('Product', function() {
 		this.get = function() {
