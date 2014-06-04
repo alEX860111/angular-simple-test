@@ -1,9 +1,9 @@
 (function() {
 	var app = angular.module('store', []);
 	
-	app.controller('StoreController', function() {
-		this.product = gem;
-	});
+	app.controller('StoreController', ['$scope', function($scope) {
+		$scope.product = gem;
+	}]);
 	
 	var gem = {
 		name: 'Cool product',
@@ -11,4 +11,3 @@
 		description: 'bla bla'
 	}
 })();
-
